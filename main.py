@@ -9,7 +9,7 @@ API_URL = "http://127.0.0.1:8000/api/meter"
 SECRET_KEY = b"hackathon_secret_key"
 current_kwh = 100.0
 
-print("🚀 Starting Smart Meter simulation. Sending data every 3 seconds...")
+print("🚀 Starting Smart Meter simulation. Sending data every 360 seconds...")
 
 while True:
     current_kwh += 0.05 
