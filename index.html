@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightning Energy Dashboard</title>
+    <!-- Link to your external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Live Balance</h2>
+            <h1 id="balance">0 sats</h1>
+            
+            <!-- Interactive Power Breaker Toggle Button -->
+            <button id="breakerBtn" class="breaker-btn btn-on" onclick="togglePower()">🛑 Disconnect Power Breaker</button>
+            <br>
+
+            <div class="status-badge">
+                <span id="dot" class="status-dot"></span>
+                <span id="status">Connecting to stream...</span>
+            </div>
+
+            <div class="log-container">
+                <div class="log-title">Streaming Ledger Activity</div>
+                <div id="log"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to your external javascript logic -->
+    <script src="app.js"></script>
+</body>
+</html>
